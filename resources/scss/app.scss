@@ -13,6 +13,8 @@ section#jumbo {
     width: 100%;
     height: 500px;
     background-image: url(../assets/images/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 main#comics {
     background-color: #1c1c1c;
@@ -29,11 +31,104 @@ main#comics {
         }
     }
 }
-footer section#top-footer {
-    height: 200px; //Remove when populated
+
+footer {
+    background-color: #303030;
     background-image: url(../assets/images/footer-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    section.banner {
+        background-color: #0282f9;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            color: white;
+
+            li {
+                display: flex;
+                padding: 1.5rem;
+                font-size: .8rem;
+                align-items: center;
+
+                img {
+                    width: 44px;
+                    object-fit: contain;
+                    mix-blend-mode: normal;
+                    margin-right: .5rem;
+
+                }
+            }
+        }
+    }
+
+    section.dc-logo {
+        background-image: url(../assets/images/dc-logo-bg.png);
+        background-position: right center;
+        background-size: initial;
+        background-repeat: no-repeat;
+        width: 90%;
+        margin-left: 22px;
+        padding-bottom: 30px;
+    }
 }
 
-footer section#bottom-footer {
+
+nav {
+    display: flex;
+
+    ul li {
+        font-size: .8rem;
+        list-style: none;
+        margin-right: .7rem;
+        padding: .1rem;
+        color: grey;
+
+
+        h5 {
+            font-size: 1rem;
+            margin: 1.5rem 0 .5rem 0;
+            color: white;
+        }
+    }
+}
+
+section.footer-bottom {
     background-color: #303030;
+    padding: 2rem 0;
+
+    div.container {
+        div.col-3 > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: .8rem;
+            display: inline-block;
+            padding: .6rem;
+            border: 2px solid #0282f9;
+        }
+
+        div.socials {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            h4 {
+                color: #0282f9;
+                padding-right: 1rem;
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+            }
+
+            img {
+                width: 25px;
+                margin: 0 .4rem;
+            }
+        }
+    }
 }
